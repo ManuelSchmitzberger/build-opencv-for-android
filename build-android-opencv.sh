@@ -38,7 +38,6 @@ build() {
           -D ANDROID_NDK="${NDK_ROOT}" \
           -D ANDROID_NATIVE_API_LEVEL=${API_LEVEL} \
           -D ANDROID_ABI="${ANDROID_ABI}" \
-          -D OPENCV_EXTRA_MODULES_PATH="${WD}/opencv_contrib/modules/"  \
           -D CMAKE_INSTALL_PREFIX="${INSTALL_DIR}/opencv" \
           -D CMAKE_BUILD_TYPE=RelWithDebInfo \
           -D ANDROID=ON \
