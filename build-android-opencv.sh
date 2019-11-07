@@ -24,11 +24,7 @@ build() {
     shift
     echo "Start building ${ANDROID_ABI_NAME} version"
 
-    if [ "${ANDROID_ABI}" = "armeabi" ]; then
-        API_LEVEL=18
-    else
-        API_LEVEL=21
-    fi
+    API_LEVEL=18
 
     temp_build_dir="${OPENCV_ROOT}/platforms/build_android_${ANDROID_ABI_NAME}"
     ### Remove the build folder first, and create it
