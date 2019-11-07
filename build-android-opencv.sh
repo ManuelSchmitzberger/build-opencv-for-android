@@ -81,7 +81,7 @@ build() {
     echo "end building ${ANDROID_ABI_NAME} version"
 }
 
-build "armeabi-v7a" "armeabi-v7a with NEON" -D ENABLE_VFPV3=ON -D ENABLE_NEON=ON$
+build "armeabi-v7a" "armeabi-v7a with NEON" -D ENABLE_VFPV3=ON -D ENABLE_NEON=ON
 build "arm64-v8a" "arm64-v8a" # NEON enabled by default$
-build "x86" "x86"$
+build "x86" "x86"
 build "x86_64" "x86_64"
