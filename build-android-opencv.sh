@@ -25,7 +25,7 @@ build() {
     echo "Start building ${ANDROID_ABI_NAME} version"
 
     if [ "${ANDROID_ABI}" = "armeabi" ]; then
-        API_LEVEL=19
+        API_LEVEL=18
     else
         API_LEVEL=21
     fi
